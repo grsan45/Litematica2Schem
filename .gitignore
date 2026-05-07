@@ -1,0 +1,31 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local mapping file
+blockmap.json
+
+# Local test and conversion artifacts
+*.litematic
+*.schematic
+*.schemplus
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.iml
