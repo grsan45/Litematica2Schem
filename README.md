@@ -6,7 +6,7 @@ It currently supports:
 
 - `schematica` output
 - `worldedit` output
-- optional `schemplus` output when using the `schematica` writer
+- optional `schemplus` support when using the `schematica` writer
 
 ### AI-Assisted Disclosure
 In the interest of time, this project made extensive use of Codex to improve development speed. I didn't want to spend 10 hours developing a non-user-friendly script for a build that I was ready to place in my world. For that reason, I decided to make use of AI while creating this. However, these formats are not standardized and are very poorly documented, so I still had to reverse engineer the schematica mod & hand-hold the agent quite a bit. I have reviewed the code and have used this on my own builds by now, so I can confirm the logic is sound.
@@ -23,19 +23,19 @@ In the interest of time, this project made extensive use of Codex to improve dev
 1. Create and activate a virtual environment.
 2. Install the required packages.
 
-Shell (Mac/Linux)
-
-```bash
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install numpy litemapy nbtlib
-```
-
 Powershell (Windows)
 
 ```pwsh
 python -m venv .venv
 .venv\Scripts\Activate.ps1
+pip install numpy litemapy nbtlib
+```
+
+Bash/ZSH (Mac/Linux)
+
+```bash
+python -m venv .venv
+.venv\Scripts\Activate.sh
 pip install numpy litemapy nbtlib
 ```
 
@@ -50,7 +50,7 @@ python ./main.py ./your-build.litematic
 By default this uses:
 
 - the `schematica` writer
-- `blockmap.json` in the current directory
+- Generates or uses the `blockmap.json` in the current directory
 - an output filename based on the input name, such as `your-build_converted.schematic`
 
 ## Command Line Options
