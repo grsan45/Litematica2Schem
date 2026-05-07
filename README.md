@@ -23,11 +23,15 @@ In the interest of time, this project made extensive use of Codex to improve dev
 1. Create and activate a virtual environment.
 2. Install the required packages.
 
+Shell (Mac/Linux)
+
 ```bash
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install numpy litemapy nbtlib
 ```
+
+Powershell (Windows)
 
 ```pwsh
 python -m venv .venv
